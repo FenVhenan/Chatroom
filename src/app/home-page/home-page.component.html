@@ -1,0 +1,6 @@
+﻿<div style="display:flex;">
+
+<app-messenger [arrayOfConversations]="arrayOfConversations" (conversationSelected)="selectConversation($event)" style="display:flex;flex:1;"></app-messenger>
+<app-message-line [selectedConversation]="selectedConversation" (chatBox)="getConversations($event)" style="display:flex;flex:99;"></app-message-line>
+
+</div>

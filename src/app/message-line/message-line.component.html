@@ -1,0 +1,23 @@
+﻿<div class="messenger-body">
+  <mat-card class="chat-message-box">
+    <mat-card-header>
+      <mat-card-title>Group Chat</mat-card-title>
+    </mat-card-header>
+    <mat-card-content style="height:100%;overflow-y:scroll;">
+      <!--		<app-message-line *ngFor="let message of messages" [message]="message"></app-message-line> -->
+      <div *ngFor="let selected of selectedConversation.conversation" class="chat-message-headline">
+        <img mat-card-image src="{{selected.image}}" class="avatar">
+        <div class="headline-message-text">
+          <h4 class="nomargin">{{selected.name}}</h4>
+          <p class="nomargin">{{selected.content}}</p>
+        </div>
+      </div>
+      
+      <div *ngIf="onSelect(conversation)" class="chat-text-box">
+        <textarea class="chat-textarea" [(ngModel)]="text"></textarea>
+        <button (click)="send(text)">Send</button>
+      </div>
+          
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,31 @@
+﻿.chat-message-box{
+    width:80%;
+	padding:20px;
+	margin:0px 40px 0px 40px;
+	max-height:500px;
+	height:100%;
+}
+.headline-message-text{
+	margin-left:10px;
+}
+
+.chat-text-box{
+	display:flex;
+}
+.chat-textarea{
+	display:flex;
+	flex:1;
+}
+.chat-message-headline{
+	display:flex;
+	margin:10px;
+	border:1px solid lightgrey;
+	background-color:lightblue;
+}
+.messenger-body{
+	display:flex;
+	flex:99;
+	height:550px !important;
+	overflow:hidden;
+	border:1px solid lightgrey;
+}
